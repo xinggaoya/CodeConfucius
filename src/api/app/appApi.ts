@@ -7,3 +7,10 @@ export function getGemmaAnswer(params: any) {
         data: params
     })
 }
+// 获取Gemma对话
+export function getGemmaChat(params: any) {
+    return request.get({
+        url: '/v1/gemma/completion/chat',
+        data: params
+    })
+}
