@@ -8,7 +8,9 @@
                      @keydown.enter="handleClick" />
           </n-input-group>
         </n-form-item>
-        <n-button type="primary" @click="handleClick" :loading="loading">翻 译</n-button>
+        <n-space justify="end">
+          <n-button type="primary" @click="handleClick" :loading="loading">翻 译</n-button>
+        </n-space>
       </n-form>
     </n-card>
     <n-card title="📖 翻译结果" style="flex: 3">
